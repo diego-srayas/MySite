@@ -1,0 +1,55 @@
+<!-- Nombre del autor: Diego Manuel salas Rayas
+    Fecha y hora: 10/101/2020 */-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('partials/head'); %>
+    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
+
+    <script type="text/javascript">
+      window.onload = function() {
+        L.mapquest.key = 'lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24';
+
+        var map = L.mapquest.map('map', {
+          center: [20.9133462,-100.7459396],
+          layers: L.mapquest.tileLayer('map'),
+          zoom: 10
+        });
+
+        
+
+        map.addControl(L.mapquest.control());
+      }
+    </script>
+
+  </head>
+
+  <body></body>
+    <%- include('partials/navbar'); %>
+   
+    
+          <div  class="jumbotron jumbotron-fluid">
+            <div class="card" style="width: 18rem;">
+                <img src="/images/ya.png" class="card-img-top" >
+                <div class="card-body">
+                  <h5 class="card-title">   Estas Registrado</h5>
+                  <p class="card-text">Ahora tenemos un registro de que estuviste aqui.</p>
+                  <a href="/" class="btn btn-primary">Ve al inicio</a>
+                </div>
+              </div>  
+        
+        
+        
+        </div>
+
+    
+       <%- include('partials/script'); %>
+   <%- include('partials/footer'); %>
+  </body>
+</html>
+
+
+
+

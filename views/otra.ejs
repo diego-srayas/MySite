@@ -1,0 +1,60 @@
+<!-- Nombre del autor: Diego Manuel salas Rayas
+    Fecha y hora: 10/101/2020 */-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('partials/head'); %>
+    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
+
+    <script type="text/javascript">
+      window.onload = function() {
+        L.mapquest.key = 'lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24';
+
+        var map = L.mapquest.map('map', {
+          center: [20.9133462,-100.7459396],
+          layers: L.mapquest.tileLayer('map'),
+          zoom: 10
+        });
+
+        
+
+        map.addControl(L.mapquest.control());
+      }
+    </script>
+
+  </head>
+
+  <body >
+    <%- include('partials/navbar'); %>
+   
+    
+          <div class="jumbotron jumbotron-fluid">
+<div>
+<h1> tiempo de relajarte ponte a jugar.</h1>
+<br>
+<iframe src="https://www.cooljuegos.com/embed/mini-survival/" 
+frameborder="0" scrolling="no" width="900" height="576" allowfullscreen></iframe>
+ </div><h4>Mini Survival es un gran minijuego en el que intentarás sobrevivir el mayor tiempo posible. Empiezas con las manos desnudas, y tu primer objetivo es recolectar algunas piedras, madera y otros recursos que puedas usar para crear tus primeras herramientas. Por lo tanto, puede crear un hacha, una caña de pescar o algo con lo que atacar, una espada, por ejemplo. También puedes iniciar un fuego por el que estarás agradecido durante la noche. Si le gusta la jardinería, puede comenzar su propia granja plantando semillas. También puedes cazar animales. Como puede ver, las posibilidades son infinitas y estará entretenido durante horas.</h4>
+ <hr color="blue" size=3>
+          <div>
+            <iframe src="https://www.cooljuegos.com/embed/stunt-destroyer/"
+             frameborder="0" scrolling="no" width="500" height="685" allowfullscreen></iframe>
+            </div><h4>Stunt Destroyer es un juego en línea en el que controlarás un coche de carreras. Tu objetivo es ganar velocidad en una plataforma. Después de eso, intenta destruir tantos obstáculos como puedas. Serás recompensado con dinero que podrás usar para mejorar tu motor o tu turbo. También puede usar este dinero para comprar un automóvil nuevo. Tu principal objetivo será llegar a la caja verde. Esto solo se puede hacer con un automóvil mejorado. Si alcanzas el cuadro verde, ¡continúas al siguiente nivel!</h4>
+            <hr color="blue" size="3">
+          
+    <div>            <iframe src="https://www.cooljuegos.com/embed/cartoon-strike/"
+             frameborder="0" scrolling="no" width="1000" height="635" allowfullscreen></iframe>
+            </div><h4>Juega con tus amigos o con desconocidos este juego multijugador en primera persona (FPS). No hay ninguna historia disponible en este momento, sólo el multijugador. Únete a la ejecución de juego o crear su propio servidor e invita a tus amigos. El juego tiene gráficos simples de píxeles por lo que no debe tener ningún problema al iniciar en cualquier dispositivo. El juego tiene también versión para móviles también.</h4>
+            </div>
+
+  
+       <%- include('partials/script'); %>
+   <%- include('partials/footer'); %>
+  </body>
+</html>
+
+
+
+

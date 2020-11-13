@@ -1,0 +1,88 @@
+<!-- Nombre del autor: Diego Manuel salas Rayas
+    Fecha y hora: 10/101/2020 */-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+     
+    <%- include('partials/head'); %> <button class="snipcart-checkout">compras<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bag" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" d="M8 1a2.5 2.5 0 0 0-2.5 2.5V4h5v-.5A2.5 2.5 0 0 0 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V5H2z"/>
+    </svg></button>
+    <link rel="preconnect" href="https://app.snipcart.com">
+    <link rel="preconnect" href="https://cdn.snipcart.com">
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.24/default/snipcart.css" />
+
+  </head>
+  <body>
+
+    <%- include('partials/navbar'); %>
+    <div class="jumbotron jumbotron-fluid">
+      <h1>Aqui te voy a invitar a que hastes dinero de diferentes maneras
+      </h1>
+     <p>                  Me regalas dinero?</p>
+     <form action="https://www.paypal.com/donate" method="post" target="_top">
+        <input type="hidden" name="hosted_button_id" value="NBYQX8XZ8CZEQ" />
+        <input type="image" src="https://www.paypalobjects.com/es_XC/MX/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+        <img alt="" border="0" src="https://www.paypal.com/es_MX/i/scr/pixel.gif" width="2" height="2" />
+       
+        <div align="center"></div><img src="/images/QR.png" width="90" height="90" /></div>
+       </form>
+       <br>
+
+       <h2>Comprame algo</h2>
+       <div class="content">
+    <button class="snipcart-add-item"
+    data-item-id="YO MERO"
+    data-item-price="1000000.00"
+    data-item-url="/paintings/starry-night"
+    data-item-description="COMPRAME TE CONVENGO BRO."
+    data-item-image="/images/yo.png"
+    data-item-name="YO MERO "
+    data-item-custom1-name="POR QUE ME QUIERES COMBRAR?">
+    COMPRAR
+    <H1>me compras? <br>soy este </h1>
+      <p>Precio: $1000000.00</p>
+    <div align="center"><img src="/images/yo.png" width="200" height="160"/> </div>
+
+    <div class="content">
+      <button class="snipcart-add-item"
+      data-item-id="Mascara Kemonito"
+      data-item-price="1000.00"
+      data-item-url="/paintings/starry-night"
+      data-item-description="Es una mascara original y firmada por el kemonito."
+      data-item-image="/images/mascara.png"
+      data-item-name="Mascara Kemonito"
+      data-item-custom1-name="Escribe alguna opinion">
+      COMPRAR
+      <H1>Mascara kemonito <br>imagen </h1>
+        <p>Precio: $1000.00</p>
+      <div align="center"><img src="/images/mascara.png" width="200" height="160"/> </div>
+
+      <div class="content">
+        <button class="snipcart-add-item"
+        data-item-id="Tennis nike"
+        data-item-price="1300.00"
+        data-item-url="/paintings/starry-night"
+        data-item-description="Tennis que puedes utilizar para hacer deporte."
+        data-item-image="/images/nik.png"
+        data-item-name="Tennis nike"
+        data-item-custom1-name="Escribe alguna opinion">
+        COMPRAR
+        <H1>Tennis nike <br>Para hombre y mujer </h1>
+          <p>Precio: $1300.00</p>
+        <div align="center"><img src="/images/nik.png" width="200" height="160"/>
+         </div>
+
+    <script async src="https://cdn.snipcart.com/themes/v3.0.24/default/snipcart.js"></script>
+    <div hidden id="snipcart" data-api-key="NDk2MWI5ZjQtYmI2Ny00NDU3LWE0NjAtYWQwN2JkNWJkMWFhNjM3NDAzMzk2MTcyNzIyNTQ5
+    ">
+
+
+        </div>
+    </div>
+
+   <%- include('partials/script'); %>
+        <%- include('partials/footer'); %>
+  </body>
+
+        
